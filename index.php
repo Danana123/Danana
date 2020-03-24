@@ -1,1 +1,1 @@
-<?php include_once('lighboxx.css') ?>
+<?php include_once('lighbox.html') ?>
