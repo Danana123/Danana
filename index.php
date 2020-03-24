@@ -64,7 +64,7 @@ $hour = date("G",$b);
 
 if ($hour>=0 && $hour<=11)
 {
-echo "Selamat Pagi, Almas Amalina";
+echo "Selamat Pagi, Kamu";
 }
 elseif ($hour >=12 && $hour<=14)
 {
@@ -89,7 +89,7 @@ echo "Selamat Malam, Kamu ";
 		padding-top: 200px;
 		background-repeat: no-repeat;
 		">
-<?php echo "<br><br> Have a Nice Day<br><br><br>"; ?>
+<?php echo "<br><br> Semangat yo vi aku ero awmu iso hahahaha<br><br><br>"; ?>
 </div>
 
 	
