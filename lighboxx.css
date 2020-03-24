@@ -1,0 +1,337 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+@font-face	{
+	font-family: 'BebasNeue';
+	src: url(../Font/BebasNeue-Regular.woff) format('woff');
+}
+
+
+
+/* Style */
+body{
+	font:18px/36px 'BebasNeue', 'Arial Narrow', 'Arial', sans-serif;
+	background-color: #ddd;
+}
+
+h1 {
+	font-size : 80px;
+	margin: 50px 0px;
+	text-align: center;
+	text-shadow: 2px 2px 2px white; 
+
+
+}
+
+.container{
+	width: 600px;
+	margin:auto;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left: 15px;
+	box-shadow: 0 0 3px 3px rgba(0,0,0,0.3);
+	border-radius :5px;
+	box-sizing:600px;
+	/*background-image: url(../Gambar/Full/2.png);*/
+	background-color: silver;
+	background-size: 640px;
+	background-repeat: none;
+	background-position: 0 0px;
+	border:5px solid black;
+	border-radius: 5px;
+	box-sizing: border-box;
+
+}
+
+
+.Gallery li {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	overflow: hidden;
+	border:5px solid #666;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	position: relative;
+	box-shadow: 0 0 3px 3px lightskyblue;
+
+}
+
+
+/*.Gallery li a img.Gamer,
+.Gallery li a img.Saitama,
+.Gallery li a img.Cewek,
+.Gallery li a img.Chelsea 
+{*/
+	border-radius:50%;
+}
+
+.Gallery img{
+	border-radius: 50%;
+
+}
+
+.container ul li a img.Gamer{
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+}
+
+
+.container ul li a img.Saitama{
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;	
+}
+
+.container ul li a img.Cewek{
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+}
+
+.container ul li a img.Chelsea{
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+}
+
+.Gallery li span {
+	display: block;
+	width: 120px;
+	height: 120px;
+	background-color: rgba(200,200,200,0.5);
+	border-radius: 50%;
+	text-align: center;
+	position: absolute;
+	top:0;
+	line-height: 120px;
+	color:#333;
+	text-shadow:1px 1px 1px #ddd;
+	opacity: 0;
+	transform: scale(0);
+	transform: rotate(0);
+	border-radius: 50%;
+}
+
+
+
+
+
+
+
+.Gallery li a:hover span{
+	opacity: 1;
+	transition: 0.3s;
+	transform: scale(1);
+	transform: rotate(360deg);
+}
+
+
+
+
+
+/*OVERLAY JANCOK*/
+.overlay{
+	position:fixed;
+	top:0;
+	bottom: 0;
+	background: rgba(0,0,0,0);
+	z-index: 999;
+	transition: 1s;
+	text-align: center;
+	padding: 100px 0;
+	width: 0;
+	height: 0;
+}
+.overlay:target{
+	width: auto;
+	height: auto;
+	left:0;
+	right:0; 
+	background: rgba(0,0,0,.7);
+
+}
+.container .overlay img{
+	max-height: 100%;
+	box-shadow: 2px 2px 8px (0,0,0,0.5)
+
+	
+}
+
+.overlay a{
+	position: absolute;	
+	top:0;
+	bottom: 0px;
+	top:-100px;
+	left: 50%;
+	margin-left: -30px;
+	color:white;
+	border: 5px solid white;
+	background-color: black;
+}
+.overlay a{
+	margin-top: -999999990px;
+}
+.overlay:target a{
+	margin-top: 0;
+	top: 35px;
+	text-decoration: none;
+	height: 35px;
+	width: 50px;
+	padding:0px 5px 0px 5px;
+
+}
+		
+
+/*.overlay a:target img{
+	animation: zoomDanFade 1s ;
+}
+
+
+@keyframes zoomDanFade{
+	0%{
+		transform: scale(0);
+		opacity: 0;
+	}
+	100%{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+*/
+.layar{
+	width:800px;
+	box-sizing: border-box;
+	padding: 5px;
+	background-image:url(../Gambar/BLS/875615.png);
+	border:5px solid lightskyblue;
+	background-position: 0 -600px;
+	background-size: 900px;
+	background-repeat: none;
+	margin: auto;
+	box-shadow: 5px 5px 5px black;
+}
+
+.anjing{
+	width: 900px;
+	margin: auto;
+	background-color: white;
+	margin-top:80px;
+	position: relative;
+	padding-top: 50px;
+	box-sizing: border-box;
+	background-image: url(../Gambar/email-pattern.png);
+	border:5px solid black;
+}
+body{
+	background-image: url(../Gambar/Full/3.png);
+	margin:100px;
+}
+
+.p1{
+	padding-left: 10px;
+}
+
+	
+
+
+.overlay:target .next{
+	background-image: url(../Gambar/kanan.png);
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	text-indent: -99999999px;
+	top: 40%;
+	margin-left: 450px;
+	opacity: 0;
+	
+	
+
+}
+
+.overlay:target .Previous{
+	background-image: url(../Gambar/Kiri.png);
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	text-indent: -9999px;
+	top: 40%; 
+	margin-left: -500px;
+	opacity: 0;
+
+	
+
+}
+.overlay:target .next{
+	animation: FadeAjah 0.5s 0.5s forwards;
+}
+.overlay:target .Previous{
+	animation: FadeAjah 0.5s 0.5s forwards;
+}
+.overlay:target img{
+	animation: Zoomfade 1s forwards;
+}
+
+.overlay:target .close{
+	animation: SlideDown 1s forwards; 	
+}
+
+@keyframes SlideDown{
+	0%{
+		opacity: 0;
+		top:10px;
+	}
+
+	100%{
+		opacity: 1;
+		top:30px;
+	}
+}
+@keyframes FadeAjah{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes Zoomfade{
+	0%{
+		opacity: 0;
+		transform: scale(0);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
