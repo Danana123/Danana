@@ -50,6 +50,7 @@ return true;
 		color: #fff;
 		background: url(night.jpg);
 		background-size: cover;
+	     	background-repeat: no-repeat;
 		text-align: center;
 		margin: 70px 130px" id="jam">
 
@@ -64,23 +65,23 @@ $hour = date("G",$b);
 
 if ($hour>=0 && $hour<=11)
 {
-echo "Selamat Pagi, Almas Amalina";
+echo "Selamat Pagi, Kamu";
 }
 elseif ($hour >=12 && $hour<=14)
 {
-echo "Selamat Siang, Almas Amalina ";
+echo "Selamat Siang, Kamu";
 }
 elseif ($hour >=15 && $hour<=17)
 {
-echo "Selamat Sore, Almas Amalina ";
+echo "Selamat Sore, Kamu";
 }
 elseif ($hour >=17 && $hour<=18)
 {
-echo "Selamat Petang, Almas Amalina ";
+echo "Selamat Petang, Kamu";
 }
 elseif ($hour >=19 && $hour<=23)
 {
-echo "Selamat Malam Almas, Amalina";
+echo "Selamat Malam, Kamu";
 }
 ?>
 <div class="have" style="font-size:40px;
