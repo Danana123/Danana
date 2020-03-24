@@ -51,7 +51,6 @@ return true;
 		background: url(night.jpg);
 		background-size: 100%;
 		text-align: center;
-		background-repeat: no-repeat;
 		margin: 70px 130px" id="jam">
 
 
